@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sharebgm" >
+
+    <ImageButton
+        android:id="@+id/sharebtn1_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sharebtn1" />
+
+    <ImageButton
+        android:id="@+id/sharebtn2_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sharebtn1_view"
+        android:layout_below="@+id/sharebtn1_view"
+        android:layout_marginTop="46dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sharebtn2" />
+
+    <ImageButton
+        android:id="@+id/sharebtn3_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sharebtn2_view"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@+id/sharebtn2_view"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sharebtn3" />
+
+    <EditText
+        android:id="@+id/edittextshareid_view"
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_alignBottom="@+id/sharebtn1_view"
+        android:layout_alignRight="@+id/sharebtn3_view"
+        android:layout_marginBottom="98dp"
+        android:layout_marginRight="33dp"
+        android:background="@android:color/transparent"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/maplayout2"
+        android:layout_below="@+id/maplayout1"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/maplayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="34dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/start" >
+
+        <ImageButton
+            android:id="@+id/mapbtn1_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/mapbtn1" />
+
+        <ImageButton
+            android:id="@+id/mapbtn2_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/mapbtn3_view"
+            android:background="@android:color/transparent"
+            android:src="@drawable/mapbtn2" />
+
+        <ImageButton
+            android:id="@+id/mapbtn3_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/mapbtn4_view"
+            android:background="@android:color/transparent"
+            android:src="@drawable/mapbtn3" />
+
+        <ImageButton
+            android:id="@+id/mapbtn4_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/mapbtn4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/maplayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="34dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/start" >
+
+        <ImageButton
+            android:id="@+id/mapsearchbtn1_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/mapsearchbtn2_view"
+            android:background="@android:color/transparent"
+            android:src="@drawable/mapsearchbtn1" />
+
+        <ImageButton
+            android:id="@+id/mapsearchbtn2_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/mapsearchbtn2" />
+
+        <ImageButton
+            android:id="@+id/mapsearchbtn3_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/mapsearchbtn3" />
+    </RelativeLayout>
+
+</RelativeLayout>

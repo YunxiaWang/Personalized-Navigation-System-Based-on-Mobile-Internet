@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search" >
+
+    <ImageView
+        android:id="@+id/search1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="47dp"
+        android:layout_toLeftOf="@+id/searchbtn1_view"
+        android:background="@android:color/transparent"
+        android:src="@drawable/search1" />
+
+    <ImageButton
+        android:id="@+id/searchbtn2_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/search1"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/search2" />
+
+    <ImageButton
+        android:id="@+id/searchbtn1_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search1"
+        android:layout_alignLeft="@+id/searchbtn2_view"
+        android:layout_marginBottom="19dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/search2" />
+
+    <EditText
+        android:id="@+id/edittext1_view"
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_alignRight="@+id/search1"
+        android:layout_alignTop="@+id/searchbtn2_view"
+        android:background="@android:color/transparent"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edittext2_view"
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_alignRight="@+id/search1"
+        android:layout_alignTop="@+id/searchbtn1_view"
+        android:background="@android:color/transparent"
+        android:ems="10" />
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/searchbtn_view"
+        android:layout_below="@+id/search1" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/searchbtn_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/search1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/searchbtn" />
+
+</RelativeLayout>
